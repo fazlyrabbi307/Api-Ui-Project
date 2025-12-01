@@ -87,6 +87,10 @@ class _ApiDataScreenState extends State<ApiDataScreen> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         borderSide: BorderSide(color: Colors.white),
@@ -99,6 +103,7 @@ class _ApiDataScreenState extends State<ApiDataScreen> {
                       hintStyle: TextStyle(fontSize: 18, color: Colors.grey),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderSide: BorderSide(color: Colors.white)
                       ),
                     ),
                   ),
