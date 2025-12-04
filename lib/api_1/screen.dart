@@ -79,6 +79,7 @@ class _ApiDataScreenState extends State<ApiDataScreen> {
           : Column(
               children: [
                 Padding(
+
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                     vertical: 10,
@@ -103,12 +104,13 @@ class _ApiDataScreenState extends State<ApiDataScreen> {
                       hintStyle: TextStyle(fontSize: 18, color: Colors.grey),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
-                        borderSide: BorderSide(color: Colors.white)
+                        borderSide: BorderSide(color: Colors.white),
                       ),
                     ),
                   ),
                 ),
                 Expanded(
+
                   child: ListView.builder(
                     itemCount: qdata.length,
                     itemBuilder: (context, index) => Padding(
@@ -146,6 +148,7 @@ class _ApiDataScreenState extends State<ApiDataScreen> {
                                     ),
                                     SizedBox(height: 10),
                                     Row(
+
                                       mainAxisAlignment: MainAxisAlignment.end,
                                       children: [
                                         Text(
