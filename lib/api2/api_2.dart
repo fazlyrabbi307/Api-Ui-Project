@@ -7,7 +7,9 @@ class PostApi {
 
   getaData() async{
     try{
-
+      Uri url = Uri.parse("https://appapi.coderangon.com/api/slider");
+      var response = await http.get(url);
+      return ;
     }catch(error){
       log("$error");
     }
